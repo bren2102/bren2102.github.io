@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+nav{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* INTRODUCTION */
+
+.introduction{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px 20px;
+    font-style: italic;
+}
+
+.name-description {
+    width: 450px;
+}
+.name-description h2{
+    font-size: 50px;
+    font-style: normal;
+}
+
+.name-description span{
+    margin: 20px 0;
+    font-style: normal;
+}
+.profile-image{
+    border-radius: 100%;
+    border: 1px solid gray;
+    width: 100px;
+    padding: 10px;
+}
+
+/* KNOWLEDGE */
+
+.knowledge {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: #80ced6;
+}
+
+/* TITLES */
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    color: #444649;
+    box-sizing: border-box;
+    font-size: 25px;
+}
+
+.line {
+    width: 80px;
+    border-bottom: 5px solid #444649;
+}
+
+/* DESCRIPTION */
+
+.description{
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 90px 90px;
+    background: white;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    color: #444649;
+    align-items: center;
+}
+
+#text-about {
+    line-height: 2;
+    font-size: 20px;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 0 10px
+}
+
+.description-tasks span {
+    font-size: 20px;
+    margin: 0 15px;
+}
+
+.description-tasks{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px 0; 
+}
+
+.task-container {
+    display: flex;
+    background: #f5f5f5;
+    width: 600px;
+}
+
+.task-name {
+    background: #d5f4e6;
+    padding: 5px 10px;
+    width: 110px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.task-color {
+    background: #80ced6;
+}
+
+#html, #css{
+    width: 70%;
+}
+
+#bootstrap {
+    width: 60%;
+}
+
+#rails {
+    width: 50%;
+}
+
+
+/* PROJECTS */
+
+.languages{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    width: 33.3%;
+    background: white;
+}
+
+img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.project-description h3{
+    text-align: center;
+    margin-top: 15px; 
+}
+
+.projects-buttons {
+    display: flex;
+    margin-top: 15px;
+    justify-content: center;
+}
+
+.desc-button{
+    border: none;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #618685; 
+    display: flex;
+    align-items: center;
+    background: #E8E8E8;
+    margin: 0 5px;
+}
+
+.projects a {
+    color: #618685; 
+    text-decoration: unset;
+}
+
+/* FOOTER */
+
+footer {
+    background: #444649;
+    width: 100%;
+    padding: 30px 0 80px 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+#contact-footer {
+    color: white;
+}
+
+#contact-footer .line {
+    width: 80px;
+    border-bottom: 5px solid white;
+}
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-media img{
+    background: white;
+    width:  30px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px
+}
+
+@media only screen and (max-width: 768px) {
+    .description {
+        flex-direction: column;
+    }
+
+    .description-container{
+        width: 100%;
+        padding: 30px 0;
+    }
+
+    .project-description {
+        width: 100%;
+    }
+
+    .projects {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .description {
+        flex-direction: column;
+    }
+
+    .description-container{
+        width: 100%;
+        padding: 30px 0;
+        align-items: center
+    }
+
+    .project-description {
+        width: 50%;
+    }
+
+    .projects :last-child {
+        width: 100%
+    }
+
+    .projects {
+        background: white;
+    }
+    .projects {
+        margin: 0;
+    }
+}
