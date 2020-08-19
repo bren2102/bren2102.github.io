@@ -40,7 +40,7 @@ nav {
        list-style: none;
        display: flex;
        font-size: 15px;
-       font-weight: bold;
+       font-weight: normal;
         li {
             margin-left: 32px;
         }
@@ -79,6 +79,11 @@ nav {
 
 body {
     background-color: $backgroundColor;
+    #swap {
+        .image {
+            order: 2;
+        }
+    }
     .project {
         display: flex;
         border-radius: 24px;
@@ -153,6 +158,87 @@ body {
     }
 }
 
+footer {
+    background-color: white;
+    border-top-right-radius: 80px;
+    .firstSection {
+        padding: 142px;
+        background-color: white;
+        border-top-right-radius: 80px;
+    }
+    .about {
+        display: flex;
+        flex-direction: column;
+        h1 {
+            color: $titleColor;
+            line-height: 60px;
+            font-size: 48px;
+        }
+        p {
+            color: $descColor;
+            margin: 20px 0;
+            line-height: 28px;
+        }
+        h3 {
+            color: $lightAccentColor;
+            font-weight: lighter;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 14px 0;
+        }
+        .icons {
+            display: flex;
+            flex-direction: row;
+            > * {
+                margin-right: 20px;
+            }
+        }
+        button {
+            padding: 12px;
+            margin-top: 34px;
+            width: 200px;
+            border: 1px solid $accentColor;
+            color: $accentColor;
+            font-weight: 500;
+            font-size: 17px;
+            line-height: 24px;
+            border-radius: 8px;
+            margin-right: 15px;
+            background-color: white;
+        }  
+        button:hover {
+            background-color: $accentColor;
+            color: white;
+            cursor: pointer;
+        }
+    }
+    .contactForm {
+        background: url(../assets/ContactBg.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-color: $accentColor;
+        border-top-left-radius: 80px;
+        padding: 142px 320px;
+        h1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 40px;
+            line-height: 52px;
+            color: white;
+            text-align: center;
+        }
+        p {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 28px;
+            color: white;
+            margin: 18px 0;
+            text-align: center;
+        }
+    }
+}
+
 @media only screen and (max-width: 768px) {
     #intro {
         padding: 140px 24px 160px;
@@ -160,11 +246,62 @@ body {
         background-size: cover;
         background-repeat: no-repeat;
     }
+    body {
+        #swap {
+            .description {
+                order: 2;
+            }
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            margin: 110px 24px;
+            .image {
+                padding: 0;
+                width: 100%;
+                height: 300px;
+                img {
+                    width: 80%;
+                }
+            }
+            .description {
+               padding: 70px 0;
+               width: 100%;
+               height: 330px;
+            }
+        }
+    }
+    
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #intro {
         padding: 140px 40px 160px;
         background-size: cover;
+    }
+    body {
+        #swap {
+            .description {
+                order: 2;
+            }
+        }
+        .project {
+            display: flex;
+            flex-direction: column;
+            margin: 110px 24px;
+            .image {
+                padding: 0;
+                width: 100%;
+                height: 300px;
+                img {
+                    width: 50%;
+                }
+            }
+            .description {
+               padding: 70px 0;
+               width: 100%;
+               height: 330px;
+            }
+        }
     }
 }
