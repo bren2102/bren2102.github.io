@@ -4,6 +4,7 @@ $titleColor: #091E42;
 $lightAccentColor: #7F8CFF;
 $lightBackgroundColor: #EBEBFF;
 $backgroundColor: #F4F5F7;
+$lineColor: #DFE1E6;
 
 *{
     margin: 0;
@@ -165,8 +166,10 @@ footer {
         padding: 142px;
         background-color: white;
         border-top-right-radius: 80px;
+        display: flex;
     }
     .about {
+        width: 50%;
         display: flex;
         flex-direction: column;
         h1 {
@@ -210,6 +213,48 @@ footer {
             background-color: $accentColor;
             color: white;
             cursor: pointer;
+        }
+    }
+    .workDetails {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        .collapsible {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 24px;
+            padding: 24px;
+            border: none;
+            color: $titleColor;
+            border-bottom: 1px solid $lineColor;
+            background-color: white;
+        }
+        .hiddenFeatures {
+            display: flex;
+            div{
+                margin: 12px;
+                display: flex;
+                flex-direction: column;
+                border-radius: 8px;
+                font-weight: 500;
+                font-size: 15px;
+                line-height: 20px;
+                background-color: $backgroundColor;
+                padding: 14px 14px 24px;
+                color: $titleColor;
+                height: 110px;
+                display: flex;
+                justify-content: space-between;
+                width: 120px;
+                :first-child {
+                    border-radius: 100px;
+                    border: 1px solid white;
+                }
+            }
         }
     }
     .contactForm {
@@ -271,7 +316,33 @@ footer {
             }
         }
     }
-    
+    .firstSection {
+        flex-direction: column;
+        padding: 100px 24px 40px !important;
+        .about {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .workDetails {
+            width: 100%;
+            .hiddenFeatures {
+                flex-direction: column;
+                div {
+                    width: auto;
+                    flex-direction: row;
+                    height: auto;
+                    align-items: center;
+                    justify-content: flex-start;
+                    :nth-child(2) {
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+    .contactForm {
+        padding: 100px 24px 40px !important;
+    }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
