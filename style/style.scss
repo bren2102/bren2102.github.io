@@ -16,7 +16,6 @@ a {
     text-decoration: none;
     color: $accentColor;
 }
-
 a:hover {
     text-decoration: none;
     color: white;
@@ -26,7 +25,9 @@ header {
     border-bottom-left-radius: 100px;
     font-family: 'Raleway', sans-serif;
 }
-
+button, a {
+    cursor: pointer;
+}
 nav {
    display: flex;
    justify-content: space-between;
@@ -78,9 +79,11 @@ nav {
     }
 }
 
-body {
+.main {
     background-color: $backgroundColor;
+    padding: 142px;
     #swap {
+        margin: 142px 0;
         .image {
             order: 2;
         }
@@ -89,7 +92,6 @@ body {
         display: flex;
         border-radius: 24px;
         background-color: white;
-        margin: 142px;
         padding: 24px;
         .image {
             width: 50%;
@@ -235,6 +237,8 @@ footer {
         }
         .hiddenFeatures {
             display: flex;
+            overflow: hidden;
+            max-height: 0;
             div{
                 margin: 12px;
                 display: flex;
@@ -282,6 +286,32 @@ footer {
             text-align: center;
         }
     }
+    form {
+        margin-top: 70px;
+        color: $descColor;
+        display: flex;
+        flex-direction: column;
+        > * {
+            padding: 15px;
+            margin-bottom: 27px;
+            border-radius: 2px;
+        }
+        textarea {
+            height: 200px;
+        }
+        .submitBtn {
+            border-radius: 8px;
+            align-self: center;
+            color: $accentColor;
+            border: none;
+            cursor: pointer;
+            width: 140px;
+        }
+        .submitBtn:hover {
+            background-color: $lightAccentColor;
+            color: white;
+        }
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -291,7 +321,7 @@ footer {
         background-size: cover;
         background-repeat: no-repeat;
     }
-    body {
+    .main {
         #swap {
             .description {
                 order: 2;
@@ -350,7 +380,7 @@ footer {
         padding: 140px 40px 160px;
         background-size: cover;
     }
-    body {
+    .main {
         #swap {
             .description {
                 order: 2;
