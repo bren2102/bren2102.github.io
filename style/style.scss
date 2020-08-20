@@ -32,6 +32,7 @@ nav {
    display: flex;
    justify-content: space-between;
    padding: 30px 50px;
+   background-color: white;
    div {
        color: $accentColor;
        font-weight: bold;
@@ -43,8 +44,11 @@ nav {
        display: flex;
        font-size: 15px;
        font-weight: normal;
-        li {
+        a {
             margin-left: 32px;
+        }
+        a:hover {
+            color: $accentColor;
         }
    }
 }
@@ -198,10 +202,10 @@ footer {
                 margin-right: 20px;
             }
         }
-        button {
+        .btn {
             padding: 12px;
             margin-top: 34px;
-            width: 200px;
+            width: max-content;
             border: 1px solid $accentColor;
             color: $accentColor;
             font-weight: 500;
@@ -211,7 +215,7 @@ footer {
             margin-right: 15px;
             background-color: white;
         }  
-        button:hover {
+        .btn:hover {
             background-color: $accentColor;
             color: white;
             cursor: pointer;
@@ -381,6 +385,7 @@ footer {
         background-size: cover;
     }
     .main {
+        padding: 100px;
         #swap {
             .description {
                 order: 2;
@@ -389,7 +394,6 @@ footer {
         .project {
             display: flex;
             flex-direction: column;
-            margin: 110px 24px;
             .image {
                 padding: 0;
                 width: 100%;
@@ -404,5 +408,34 @@ footer {
                height: 330px;
             }
         }
+    }
+
+    .firstSection {
+        flex-direction: column;
+        padding: 80px !important;
+        .about {
+            width: 100%;
+            margin-bottom: 24px;
+        }
+        .workDetails {
+            width: 100%;
+            .hiddenFeatures {
+                flex-direction: column;
+                div {
+                    width: auto;
+                    flex-direction: row;
+                    height: auto;
+                    align-items: center;
+                    justify-content: flex-start;
+                    :nth-child(2) {
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+    }
+
+    .contactForm {
+        padding: 142px 220px;
     }
 }

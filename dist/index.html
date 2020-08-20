@@ -14,12 +14,12 @@
     <header>
         <nav>
             <div>
-                Logo
+                Brenda
             </div>
             <ul>
-                <li>Portfolio</li>
-                <li>About</li>
-                <li>Contact</li>
+                <a href="#main">Portfolio</a>
+                <a href="#firstSection">About</a>
+                <a href="#contactForm">Contact</a>
             </ul>
         </nav>
         <div id="intro">
@@ -28,15 +28,23 @@
             experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
             <h3>LETS CONNECT</h3>
             <div>
-                <span class="iconify" data-inline="false" data-icon="el:twitter" style="color: #505F79; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="bx:bxl-linkedin" style="color: #505F79; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="uim:github-alt" style="color: #505F79; font-size: 20px;"></span>
-                <span class="iconify" data-inline="false" data-icon="cib:angellist" style="color: #505F79; font-size: 20px;"></span>
-            </div>
+                <a href="https://twitter.com/BrendaYucra2">
+                    <span class="iconify" data-inline="false" data-icon="el:twitter" style="color: #505F79; font-size: 20px;"></span>
+                </a>
+                <a href="https://www.linkedin.com/in/brenda-yucra-51980681/">
+                   <span class="iconify" data-inline="false" data-icon="bx:bxl-linkedin" style="color: #505F79; font-size: 20px;"></span>
+                </a>
+                <a href="https://github.com/bren2102/">
+                    <span class="iconify" data-inline="false" data-icon="uim:github-alt" style="color: #505F79; font-size: 20px;"></span>
+                </a>
+                <a href="https://angel.co/u/brenda-yucra">
+                    <span class="iconify" data-inline="false" data-icon="cib:angellist" style="color: #505F79; font-size: 20px;"></span>
+                </a>
+               </div>
         </div>
     </header>
     <div class="main">
-        <div class="project">
+        <div class="project" id="main">
             <div class="image">
                 <img src="../assets/pokedexpage.png" alt="project">
             </div>
@@ -157,19 +165,29 @@
         </div>
     </div>
     <footer>
-        <div class="firstSection">
+        <div class="firstSection" id="firstSection">
             <div class="about">
                 <h1>About Me</h1>
                 <p>Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and
                 experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
                 <h3>LETS CONNECT</h3>
                 <div class="icons">
-                    <span class="iconify" data-inline="false" data-icon="el:twitter" style="color: #505F79; font-size: 20px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="bx:bxl-linkedin" style="color: #505F79; font-size: 20px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="uim:github-alt" style="color: #505F79; font-size: 20px;"></span>
-                    <span class="iconify" data-inline="false" data-icon="cib:angellist" style="color: #505F79; font-size: 20px;"></span>
+                    <a href="https://twitter.com/BrendaYucra2">
+                        <span class="iconify" data-inline="false" data-icon="el:twitter" style="color: #505F79; font-size: 20px;"></span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/brenda-yucra-51980681/">
+                        <span class="iconify" data-inline="false" data-icon="bx:bxl-linkedin"
+                            style="color: #505F79; font-size: 20px;"></span>
+                    </a>
+                    <a href="https://github.com/bren2102/">
+                        <span class="iconify" data-inline="false" data-icon="uim:github-alt"
+                            style="color: #505F79; font-size: 20px;"></span>
+                    </a>
+                    <a href="https://angel.co/u/brenda-yucra">
+                        <span class="iconify" data-inline="false" data-icon="cib:angellist" style="color: #505F79; font-size: 20px;"></span>
+                    </a>
                 </div>
-                <button>Get my Resume</button>
+                <a class="btn" href="./index.html" download>Get my Resume</a>
             </div>
             <div class="workDetails">
                 <button class="collapsible">
@@ -216,9 +234,25 @@
                     <span class="iconify" class="collapsible-arrow" data-inline="false" data-icon="dashicons:arrow-down-alt2"
                     style="color: #091E42; font-size: 20px;" data-flip="vertical" data-rotate="90deg"></span>
                 </button>
+                <div class="hiddenFeatures">
+                    <div>
+                        <span class="iconify" data-inline="false" data-icon="ic:baseline-sync-problem" style="font-size: 60px; color: white; background-color: #ABB2AC;"></span>
+                        <span>Problem Solving</span>
+                    </div>
+                    <div>
+                        <span class="iconify" data-inline="false" data-icon="ri:team-fill"
+                        style="font-size: 50px; background-color: #F1C529; color: white; padding: 5px;"></span>
+                        <span>Team Work</span>
+                    </div>
+                    <div>
+                        <span class="iconify" data-inline="false" data-icon="bx:bx-timer"
+                            style="font-size: 50px; background-color: #2931F1; color: white; padding: 5px;"></span>
+                        <span>Time Management</span>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="contactForm">
+        <div class="contactForm" id="contactForm">
             <h1>Contact Me</h1>
             <p>If you have an application you are interested in developing, a feature that you need built or a project that needs
             coding. I’d love to help with it</p>
