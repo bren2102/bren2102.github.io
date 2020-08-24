@@ -16,3 +16,29 @@ document.querySelectorAll('.collapsible').forEach(button => {
     }
   })
 })
+
+document.querySelectorAll('.displayMenu').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('menu--active');
+    if (button.classList.contains('menu--active')) {
+      document.querySelector('.menuDisplayed').style.maxHeight = '100%';
+      document.querySelector('.displayMenu').style.position = 'unset';
+    } else {
+      console.log('no')
+    }
+  })
+})
+
+
+document.querySelectorAll('.closeMenu').forEach(button => {
+  button.addEventListener('click', () => {
+    button.classList.toggle('displayed--active');
+
+    if (button.classList.contains('displayed--active')) {    
+      document.querySelector('.menuDisplayed').style.maxHeight = 0;
+      document.querySelector('.displayMenu').style.position = 'sticky';
+    } else {
+      console.log('no')
+    }
+  })
+})

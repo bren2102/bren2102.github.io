@@ -28,17 +28,19 @@ header {
 button, a {
     cursor: pointer;
 }
+.menuDisplayed,
+.displayMenu {
+    overflow: hidden;
+    max-height: 0;
+}
 nav {
    display: flex;
    justify-content: space-between;
    padding: 30px 50px;
    position: sticky;
-    top: 0;
-    z-index: 100;
+   top: 0;
+   z-index: 100;
    background-color: white;
-   span {
-       display: none;
-   }
    div {
        color: $accentColor;
        font-weight: bold;
@@ -320,6 +322,36 @@ footer {
 }
 
 @media only screen and (max-width: 768px) {
+    .displayMenu {
+        max-height: 100% !important;
+    }
+    .menuDisplayed {
+        overflow: hidden;
+        max-height: 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 44px;
+        background-color: rgba(127, 140, 255, 0.945);
+        height: 100%;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 100;
+        display: flex;
+        flex-direction: column;
+        ul {
+            display: flex;
+            flex-direction: column;  
+        }
+        a {
+            color: white !important; 
+            padding: 28px;              
+        }
+        .closeMenu {
+            align-self: self-end; 
+        }
+    }
     nav {
         padding: 30px 24px;
         ul {
@@ -394,8 +426,10 @@ footer {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    nav:nth-child(2) {
-        display: none;
+    .menuDisplayed,
+    .displayMenu {
+        overflow: hidden;
+        max-height: 0;
     }
     #intro {
         padding: 140px 40px 160px;
