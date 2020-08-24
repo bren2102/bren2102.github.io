@@ -28,6 +28,9 @@ header {
 button, a {
     cursor: pointer;
 }
+button:focus{
+    outline:0;
+}
 .menuDisplayed,
 .displayMenu {
     overflow: hidden;
