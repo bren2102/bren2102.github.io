@@ -116,7 +116,7 @@ nav {
             align-items: center;
             justify-content: center;
             img {
-                width: 100%;
+                width: 95%;
             }
         }
         .description{
@@ -149,7 +149,7 @@ nav {
                     font-size: 12px;
                     line-height: 16px;
                     border-radius: 8px;
-                    margin: 0 10px 10px 0;
+                    margin: 0 10px 10px 0 !important;
                 }
             }
             .actions {
@@ -387,16 +387,15 @@ footer {
                 width: 100%;
                 height: 300px;
                 img {
-                    width: -webkit-fill-available;
+                    max-height: 95%;
                 }
             }
             .description {
                padding: 70px 0;
                width: 100%;
-               height: 330px;
             }
-            .actions {
-                justify-content: space-between;
+            .actions > * {
+                margin-right: 15px;
             }
         }
     }
@@ -454,7 +453,7 @@ footer {
                 width: 100%;
                 height: 300px;
                 img {
-                    width: 80%;
+                    height: 95%;
                 }
             }
             .description {
